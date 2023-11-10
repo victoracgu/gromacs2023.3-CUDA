@@ -1,0 +1,11 @@
+libdir=/content/gromacs/lib
+
+Name: libgromacs
+Description: Gromacs library
+URL: http://www.gromacs.org
+Version: 2023
+Requires:  
+Libs.private:   
+Libs: -L${libdir} -lgromacs  -lm
+Cflags:  -I/content/gromacs/include -DGMX_DOUBLE=0 -fopenmp
+
